@@ -1,14 +1,274 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Ionic Blank
+      Quiz App
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+        <ion-item>
+          <ion-input type="text" placeholder="enter your name" [(ngModel)]="name"></ion-input>
+        </ion-item>
+ <h1 class="white">Choose the correct answers from the following queastions</h1>
+ <h2>General science</h2>
+
+ <p><B>1. 
+  Brass gets discoloured in air because of the presence of which of the following gases in air?</B></p>
+  <div id="hydro">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/DCl_Neutron_powder.png/200px-DCl_Neutron_powder.png">
+
+  </div>
+
+  <ion-list checkbox-group>
+  <ion-item>
+      <ion-label>Oxygen</ion-label>
+      <ion-checkbox value="answer" [(ngModel)]="oxygen"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+      <ion-label>Hydrogen sulphide</ion-label>
+      <ion-checkbox [(ngModel)]="hydrogen" [checked]= "No"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+      <ion-label>Carbon dioxide</ion-label>
+      <ion-checkbox [(ngModel)]="carbon"></ion-checkbox>
+  </ion-item>
+</ion-list>
+
+  <p><B>2. 
+    Which of the following is a non metal that remains liquid at room temperature?</B></p>
+    <img src="../../../assets/imgs/bromine2.jpg" alt="">
+    <ion-list checkbox-group>
+    <ion-item>
+      <ion-label>Phosphorous</ion-label>
+      <ion-checkbox [(ngModel)]="phos"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Bromine</ion-label>
+    <ion-checkbox [(ngModel)]="bromine" [checked]= "No"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>Chlorine</ion-label>
+  <ion-checkbox [(ngModel)]="chlorine"></ion-checkbox>
+</ion-item>
+</ion-list>
+
+<p><B>3. 
+  Chlorophyll is a naturally occurring chelate compound in which central metal is</B></p>
+  <img src="../../../assets/imgs/magnesium.png" alt="">
+  <ion-list checkbox-group>
+  <ion-item>
+  <ion-label>copper</ion-label>
+  <ion-checkbox [(ngModel)]="copper"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>magnesium</ion-label>
+  <ion-checkbox [(ngModel)]="magnesium"[checked]= "No" ></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>iron</ion-label>
+  <ion-checkbox [(ngModel)]="iron"></ion-checkbox>
+</ion-item>
+</ion-list>
+
+<p><B>4. 
+  Which of the following is used in pencils?</B></p>
+  <img src="../../../assets/imgs/graphite.jpg" alt="">
+  <ion-list checkbox-group>
+  <ion-item>
+  <ion-label>Graphite</ion-label>
+  <ion-checkbox [(ngModel)]="graphite" [checked]= "No" ></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>Silicon</ion-label>
+  <ion-checkbox [(ngModel)]="silicon"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>Charcoal</ion-label>
+  <ion-checkbox [(ngModel)]="charcoal"></ion-checkbox>
+</ion-item>
+</ion-list>
+
+<p><B>5. 
+  Which of the following metals forms an amalgam with other metals?</B></p>
+  <img src="../../../assets/imgs/mercury.jpg" alt="">
+  <ion-list checkbox-group>
+  <ion-item>
+  <ion-label>Tin</ion-label>
+  <ion-checkbox [(ngModel)]="tin"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>Mercury</ion-label>
+  <ion-checkbox [(ngModel)]="mercury" [checked]= "No"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>Lead</ion-label>
+  <ion-checkbox [(ngModel)]="lead"></ion-checkbox>
+</ion-item>
+</ion-list>
+
+<h2>Electrical engineering</h2>
+
+<p>1. 
+  The term series opposing means that sources are in series with opposite polarities.</p>
+  <img src="../../../assets/imgs/voltage.png" alt="">
+  <ion-list checkbox-group>
+  <ion-item>
+  <ion-label>true</ion-label>
+  <ion-checkbox [(ngModel)]="fg" [checked]= "No"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>false</ion-label>
+  <ion-checkbox [(ngModel)]="rer"></ion-checkbox>
+</ion-item>
+</ion-list>
+
+<p>2. 
+  If you know the current anywhere in a series circuit, you know the current everywhere in a series circuit</p>
+  <ion-list checkbox-group>
+  <ion-item>
+  <ion-label>true</ion-label>
+  <ion-checkbox [(ngModel)]="tr" [checked]= "No"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>false</ion-label>
+  <ion-checkbox [(ngModel)]="fa"></ion-checkbox>
+</ion-item>
+</ion-list>
+
+<p>3. 
+  In a series circuit, the individual powers are additive.</p>
+  <ion-list checkbox-group>
+  <ion-item>
+  <ion-label>true</ion-label>
+  <ion-checkbox [(ngModel)]="la" [checked]= "No"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>false</ion-label>
+  <ion-checkbox [(ngModel)]="le"></ion-checkbox>
+</ion-item>
+</ion-list>
+
+<p>4. 
+  The total resistance of a series circuit is equal to the difference between the largest and smallest value resistors.</p>
+  <ion-list checkbox-group>
+  <ion-item>
+  <ion-label>true</ion-label>
+  <ion-checkbox [(ngModel)]="li"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>false</ion-label>
+  <ion-checkbox [(ngModel)]="lo" [checked]= "No"></ion-checkbox>
+</ion-item>
+</ion-list>
+
+
+<p>5. 
+  The voltage at one point in a circuit is always measured relative to another point.</p>
+  <ion-list checkbox-group>
+  <ion-item>
+  <ion-label>true</ion-label>
+  <ion-checkbox [(ngModel)]="lu" [checked]= "No"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>false</ion-label>
+  <ion-checkbox [(ngModel)]="aeiou"></ion-checkbox>
+</ion-item>
+</ion-list>
+
+<h2>English fill in the missing word</h2>
+<img src="../../../assets/imgs/english-quiz.png" alt="">
+<p>1. Let's _________________ fishing!</p>
+<ion-list checkbox-group>
+<ion-item>
+  <ion-label>go</ion-label>
+  <ion-checkbox [(ngModel)]="ba" [checked]= "No"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>play</ion-label>
+  <ion-checkbox [(ngModel)]="be"></ion-checkbox>
+</ion-item>
+</ion-list>
+
+<p>2. What month were you _________________ in?</p>
+<ion-list checkbox-group>
+<ion-item>
+  <ion-label>want</ion-label>
+  <ion-checkbox [(ngModel)]="bi"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>born</ion-label>
+  <ion-checkbox [(ngModel)]="bo" [checked]= "No"></ion-checkbox>
+</ion-item>
+</ion-list>
+
+<p>3. The _________________ is 4 o'clock.</p>
+<ion-list checkbox-group>
+<ion-item>
+  <ion-label>time</ion-label>
+  <ion-checkbox [(ngModel)]="bu" [checked]= "No"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>came</ion-label>
+  <ion-checkbox [(ngModel)]="ka"></ion-checkbox>
+</ion-item>
+</ion-list>
+
+<p>4. I want to be a _________________.</p>
+<ion-list checkbox-group>
+<ion-item>
+  <ion-label>pencil</ion-label>
+  <ion-checkbox [(ngModel)]="ke"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>doctor</ion-label>
+  <ion-checkbox [(ngModel)]="ki" [checked]= "No"></ion-checkbox>
+</ion-item>
+</ion-list>
+
+<p>5.Where _________________ you live?</p>
+<ion-list checkbox-group>
+<ion-item>
+  <ion-label>are</ion-label>
+  <ion-checkbox [(ngModel)]="ko"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>do</ion-label>
+  <ion-checkbox [(ngModel)]="ku" [checked]= "No"></ion-checkbox>
+</ion-item>
+</ion-list>
+
+<h1> Score {{score}}</h1>
+    <p>{{name}}</p>
+    <p>Thank you for participating in our Quiz</p>
+    <div  *ngIf="value" id="score">
+    <b>correct answers:</b><br>
+    <b>Part 1 answers</b><br>
+    <b>Q1{{answer1}}</b><br>
+    <b>Q2{{answer2}}</b><br>
+    <b>Q3{{answer3}}</b><br>
+    <b>Q4{{answer4}}</b><br>
+    <b>Q5{{answer5}}</b><br>
+    <b>Part 2 answers</b><br>
+    <b>Q1{{answer6}}</b><br>
+    <b>Q2{{answer7}}</b><br>
+    <b>Q3{{answer8}}</b><br>
+    <b>Q4{{answer9}}</b><br>
+    <b>Q5{{answer10}}</b><br>
+    <b>Part 3 answers</b><br>
+    <b>Q1{{answer11}}</b><br>
+    <b>Q2{{answer12}}</b><br>
+    <b>Q3{{answer13}}</b><br>
+    <b>Q4{{answer14}}</b><br>
+    <b>Q5{{answer15}}</b><br>
+    </div>
+
+    <div class="submit" >
+      <button ion-button  (click)= "submit()" >submit</button>
+      <button ion-button (click)= "onReset()" >Reset</button>
+      </div>
+
+    
 </ion-content>
